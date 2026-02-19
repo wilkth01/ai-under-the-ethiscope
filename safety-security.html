@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safety, Security &amp; Dual Use | AI Under the Ethiscope</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="images/ethiscope-logo.png" alt="AI Under the Ethiscope">
+        <span>AI Under the Ethiscope</span>
+      </a>
+      <button class="nav-hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#framework">Framework</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#pipeline">Ethics Pipeline</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="project-hero">
+    <div class="project-hero-content">
+      <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; <a href="index.html#projects">Projects</a> &rsaquo; Safety &amp; Security</div>
+      <div class="tag-line">Safety, Security &amp; Dual Use</div>
+      <h1>A Fatal Misclassification</h1>
+      <p class="case-label">Case Study: 2018 Uber Autonomous Vehicle Fatality &mdash; Tempe, Arizona</p>
+    </div>
+  </header>
+
+  <section class="project-content">
+    <div class="container">
+      <div class="project-layout">
+        <div class="project-main">
+
+          <div class="source-docs">
+            <h3>Source Documents</h3>
+            <ul>
+              <li><a href="documents/safety-security/Case-and-Mechanism-Explanation.docx"><span class="doc-icon">&#128196;</span> Case &amp; Mechanism Explanation</a></li>
+              <li><a href="documents/safety-security/Field-Guide-Summary.pdf"><span class="doc-icon">&#128196;</span> Field Guide Summary</a></li>
+            </ul>
+          </div>
+
+          <h2>The Case</h2>
+          <p>In March 2018, pedestrian Elaine Herzberg was struck and killed in Tempe, Arizona by an Uber self-driving test vehicle operating in autonomous mode. The vehicle was part of Uber's advanced self-driving program, which relied on AI-based perception systems to detect objects, classify them, and decide whether braking or evasive action was needed.</p>
+
+          <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=900&h=450&fit=crop" alt="Autonomous vehicle technology" class="feature-image">
+
+          <p>A human safety driver was present but was distracted at the moment of impact. The AI system detected Mrs. Herzberg but repeatedly misclassified her as different objects &mdash; switching between pedestrian, bicycle, and other categories &mdash; causing a critical delay in braking. The vehicle continued to drive, ultimately striking and killing her.</p>
+
+          <h2>The Three-Level Failure</h2>
+
+          <h3>Model Level</h3>
+          <p>The perception system failed to correctly identify and maintain a consistent classification of Mrs. Herzberg as she walked her bicycle across the road. The repeated misclassification prevented timely braking response.</p>
+
+          <h3>Workflow Level</h3>
+          <p>The safety driver was entrusted to supervise a complex autonomous system alone and make split-second interventions in real time. This single point of human oversight was fundamentally insufficient for the task.</p>
+
+          <h3>Governance Level</h3>
+          <p>Uber continued testing on public roads while aware of significant safety limitations. Arizona regulators had created a permissive testing environment. The result was a combination of AI system failure, inadequate human oversight, and insufficient institutional safeguards that produced a fatal outcome.</p>
+
+          <div class="callout">
+            <h4>The Problem of Distributed Responsibility</h4>
+            <p>When companies, developers, regulators, and operators all contribute to a system failure, holding any single party accountable becomes extraordinarily difficult. This distributed responsibility creates a moral vacuum where fatal errors can occur without clear answerability.</p>
+          </div>
+
+          <h2>Who Is Affected?</h2>
+          <ul>
+            <li><strong>Elaine Herzberg and her family:</strong> Experienced the most direct and irreversible harm</li>
+            <li><strong>Uber:</strong> Developed, operated, and bore organizational responsibility for the autonomous system</li>
+            <li><strong>The safety driver:</strong> Responsible for monitoring but placed in an impossible supervisory role</li>
+            <li><strong>Engineers and managers:</strong> Made design decisions about the emergency detection and braking system</li>
+            <li><strong>Arizona regulators:</strong> Created the permissive framework that allowed testing on public roads</li>
+            <li><strong>All pedestrians and civilians:</strong> Share roads with experimental systems and face risks from untested technologies</li>
+          </ul>
+
+          <h2>The Ethical Stakes</h2>
+          <p>The case exposes a fundamental tension between innovation and the ethical duty of care owed to the public. Systems marketed as potentially "safer than humans" may create complacency until the moment they fail in ways human drivers would not. In safety-critical environments, the consequences of failure are irreversible.</p>
+
+          <div class="callout callout-gold">
+            <h4>Key Ethical Questions</h4>
+            <p>How much control should we give AI systems in safety-critical environments where human lives are at stake? When the potential benefits of autonomous vehicles are measured against individual safety, whose interests should take priority? How do we create governance structures that prevent the diffusion of responsibility from becoming an excuse for inaction?</p>
+          </div>
+
+        </div>
+
+        <aside class="project-sidebar">
+          <div class="sidebar-card">
+            <h4>Quick Facts</h4>
+            <ul>
+              <li><strong>Date:</strong> March 2018</li>
+              <li><strong>Location:</strong> Tempe, Arizona</li>
+              <li><strong>Victim:</strong> Elaine Herzberg</li>
+              <li><strong>Company:</strong> Uber</li>
+              <li><strong>Failure:</strong> Object misclassification</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>Pipeline Stages</h4>
+            <ul>
+              <li><strong>Primary:</strong> Model / System</li>
+              <li><strong>Secondary:</strong> Workflow Use</li>
+              <li><strong>Critical:</strong> Oversight &amp; Governance</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>Ethical Dimensions</h4>
+            <ul>
+              <li>Harm &mdash; fatal, irreversible</li>
+              <li>Accountability &mdash; distributed responsibility</li>
+              <li>Justice &mdash; duty of care to public</li>
+              <li>Rights &mdash; safety of bystanders</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>All Projects</h4>
+            <div class="sidebar-nav">
+              <a href="bias-discrimination.html">Bias &amp; Discrimination</a>
+              <a href="labor-automation.html">Labor &amp; Automation</a>
+              <a href="intellectual-property.html">Intellectual Property</a>
+              <a href="human-agency.html">Human Agency</a>
+              <a href="misinformation-deepfakes.html">Misinformation &amp; Deepfakes</a>
+              <a href="ethical-obligations-ai.html">Moral Status of AI</a>
+              <a href="power-monopoly.html">Power &amp; Monopoly</a>
+              <a href="environmental-impact.html">Environmental Impact</a>
+              <a href="privacy-surveillance.html">Privacy &amp; Consent</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logos">
+          <img src="images/ethiscope-logo.png" alt="Ethiscope Logo">
+          <img src="images/ai-week-logo.png" alt="AI Week 2026">
+        </div>
+        <p>A PHIL 388 project exploring the ethical dimensions of artificial intelligence.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="bias-discrimination.html">Bias &amp; Discrimination</a></li>
+          <li><a href="labor-automation.html">Labor &amp; Automation</a></li>
+          <li><a href="intellectual-property.html">Intellectual Property</a></li>
+          <li><a href="human-agency.html">Human Agency</a></li>
+          <li><a href="misinformation-deepfakes.html">Misinformation &amp; Deepfakes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More Projects</h4>
+        <ul>
+          <li><a href="ethical-obligations-ai.html">Moral Status of AI</a></li>
+          <li><a href="power-monopoly.html">Power &amp; Monopoly</a></li>
+          <li><a href="safety-security.html">Safety &amp; Security</a></li>
+          <li><a href="environmental-impact.html">Environmental Impact</a></li>
+          <li><a href="privacy-surveillance.html">Privacy &amp; Consent</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Widener University &middot; PHIL 388: Ethics of Artificial Intelligence &middot; Dr. Tom Wilk &middot; Spring 2026</p>
+    </div>
+  </footer>
+
+  <script src="easter-egg.js"></script>
+</body>
+</html>

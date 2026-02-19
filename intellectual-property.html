@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intellectual Property &amp; Creative Labor | AI Under the Ethiscope</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="images/ethiscope-logo.png" alt="AI Under the Ethiscope">
+        <span>AI Under the Ethiscope</span>
+      </a>
+      <button class="nav-hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#framework">Framework</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#pipeline">Ethics Pipeline</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="project-hero">
+    <div class="project-hero-content">
+      <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; <a href="index.html#projects">Projects</a> &rsaquo; Intellectual Property</div>
+      <div class="tag-line">Intellectual Property, Authorship &amp; Creative Labor</div>
+      <h1>Training on Piracy</h1>
+      <p class="case-label">Case Study: Bartz v. Anthropic ($1.5 Billion Settlement)</p>
+    </div>
+  </header>
+
+  <section class="project-content">
+    <div class="container">
+      <div class="project-layout">
+        <div class="project-main">
+
+          <div class="source-docs">
+            <h3>Source Documents</h3>
+            <ul>
+              <li><a href="documents/intellectual-property/Case-and-Mechanism-Explanation.docx"><span class="doc-icon">&#128196;</span> Case &amp; Mechanism Explanation</a></li>
+              <li><a href="documents/intellectual-property/Field-Guide-Summary.docx"><span class="doc-icon">&#128196;</span> Field Guide Summary</a></li>
+            </ul>
+          </div>
+
+          <h2>The Case</h2>
+          <p>Andrea Bartz, Charles Graeber, and Kirk Wallace Johnson filed a class-action complaint against Anthropic PBC, alleging that the company illegally obtained their copyrighted works &mdash; along with hundreds of thousands of other authors' books &mdash; to train its large language models without any attempt at compensation.</p>
+
+          <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=900&h=450&fit=crop" alt="Books and copyright" class="feature-image">
+
+          <p>Anthropic obtained the books through "The Pile," an 800+ gigabyte open-source dataset. One subset, known as "Books3," contained the full contents of Bibliotik, a known pirating website with nearly 200,000 books. Anthropic also used data from other pirating sources, including LibGen and PiLiMi, despite knowing these were illegitimate sources.</p>
+
+          <h2>The Legal Outcome</h2>
+          <p>The judge ruled that while using legally obtained works for training might have constituted fair use, obtaining them from piracy websites crossed a clear legal line. The settlement reached $1.5 billion, covering nearly 500,000 pirated works with ISBN/ASIN numbers registered with the U.S. Copyright Office.</p>
+
+          <h2>The Ethical Pipeline</h2>
+          <div class="callout">
+            <h4>Where Things Went Wrong</h4>
+            <p><strong>Procurement &amp; Data Practices:</strong> Anthropic acquired training data from known pirating websites without author permission, directly violating intellectual property rights and undermining creative autonomy.</p>
+            <p><strong>Policy Goals:</strong> The company used pirated works to save time and money launching Claude, with no consideration for author compensation.</p>
+            <p><strong>Workflow &amp; Outcomes:</strong> The speed of integration amplified downstream harms. Anyone can now use AI to generate novels in minutes, bringing financial harm to the authors whose work made it possible.</p>
+          </div>
+
+          <h2>Who Is Affected?</h2>
+          <ul>
+            <li><strong>Plaintiffs and all authors:</strong> Their creative labor was exploited without consent, threatening the economic sustainability of authorship</li>
+            <li><strong>Publishers:</strong> Legitimate licensing and purchasing markets are undermined</li>
+            <li><strong>AI developers:</strong> Face legal and reputational risks from data sourcing decisions</li>
+            <li><strong>End users:</strong> Benefit from AI-generated creative work at the expense of original creators</li>
+            <li><strong>All creative professionals:</strong> Photographers, artists, musicians face parallel threats</li>
+          </ul>
+
+          <h2>The Ethical Stakes</h2>
+          <p>Even if the works had been legally obtained, authors would still face harm because AI models can mimic writing styles or generate similar work, potentially displacing the very creators who made the technology possible. The case exposes a fundamental tension between technological efficiency and the rights of creative workers.</p>
+
+          <div class="callout callout-gold">
+            <h4>Core Moral Concern</h4>
+            <p>Benefits of AI-generated content accrue primarily to technology companies and end users, while the costs &mdash; lost income, devalued craft, undermined markets &mdash; fall disproportionately on the authors, artists, and creative professionals whose work was taken without consent.</p>
+          </div>
+
+          <p><em>Research by Noor &amp; Laura.</em></p>
+
+        </div>
+
+        <aside class="project-sidebar">
+          <div class="sidebar-card">
+            <h4>Quick Facts</h4>
+            <ul>
+              <li><strong>Case:</strong> Bartz v. Anthropic</li>
+              <li><strong>Settlement:</strong> $1.5 billion</li>
+              <li><strong>Works affected:</strong> ~500,000</li>
+              <li><strong>Data source:</strong> The Pile / Books3</li>
+              <li><strong>Piracy sites:</strong> Bibliotik, LibGen, PiLiMi</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>Pipeline Stages</h4>
+            <ul>
+              <li><strong>Primary:</strong> Data Practices</li>
+              <li><strong>Secondary:</strong> Procurement</li>
+              <li><strong>Tertiary:</strong> Policy Goals</li>
+              <li><strong>Impact:</strong> Outcomes</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>Ethical Dimensions</h4>
+            <ul>
+              <li>Rights &mdash; IP violation</li>
+              <li>Justice &mdash; unfair distribution</li>
+              <li>Autonomy &mdash; consent denied</li>
+              <li>Harm &mdash; economic injury</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>All Projects</h4>
+            <div class="sidebar-nav">
+              <a href="bias-discrimination.html">Bias &amp; Discrimination</a>
+              <a href="labor-automation.html">Labor &amp; Automation</a>
+              <a href="human-agency.html">Human Agency</a>
+              <a href="misinformation-deepfakes.html">Misinformation &amp; Deepfakes</a>
+              <a href="ethical-obligations-ai.html">Moral Status of AI</a>
+              <a href="power-monopoly.html">Power &amp; Monopoly</a>
+              <a href="safety-security.html">Safety &amp; Security</a>
+              <a href="environmental-impact.html">Environmental Impact</a>
+              <a href="privacy-surveillance.html">Privacy &amp; Consent</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logos">
+          <img src="images/ethiscope-logo.png" alt="Ethiscope Logo">
+          <img src="images/ai-week-logo.png" alt="AI Week 2026">
+        </div>
+        <p>A PHIL 388 project exploring the ethical dimensions of artificial intelligence.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="bias-discrimination.html">Bias &amp; Discrimination</a></li>
+          <li><a href="labor-automation.html">Labor &amp; Automation</a></li>
+          <li><a href="intellectual-property.html">Intellectual Property</a></li>
+          <li><a href="human-agency.html">Human Agency</a></li>
+          <li><a href="misinformation-deepfakes.html">Misinformation &amp; Deepfakes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More Projects</h4>
+        <ul>
+          <li><a href="ethical-obligations-ai.html">Moral Status of AI</a></li>
+          <li><a href="power-monopoly.html">Power &amp; Monopoly</a></li>
+          <li><a href="safety-security.html">Safety &amp; Security</a></li>
+          <li><a href="environmental-impact.html">Environmental Impact</a></li>
+          <li><a href="privacy-surveillance.html">Privacy &amp; Consent</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Widener University &middot; PHIL 388: Ethics of Artificial Intelligence &middot; Dr. Tom Wilk &middot; Spring 2026</p>
+    </div>
+  </footer>
+
+  <script src="easter-egg.js"></script>
+</body>
+</html>

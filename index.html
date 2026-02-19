@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Under the Ethiscope | Widener University</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="images/ethiscope-logo.png" alt="AI Under the Ethiscope">
+        <span>AI Under the Ethiscope</span>
+      </a>
+      <button class="nav-hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#framework">Framework</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#pipeline">Ethics Pipeline</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-logos">
+        <img src="images/ethiscope-logo.png" alt="AI Under the Ethiscope">
+        <img src="images/ai-week-logo.png" alt="Widener AI Week 2026">
+        <img src="images/widener-logo.png" alt="Widener University" class="widener-logo">
+      </div>
+      <h1>AI Under the <span class="highlight">Ethiscope</span></h1>
+      <p class="subtitle">A student-driven exploration of the most pressing ethical challenges in artificial intelligence, produced for Widener University AI Week 2026.</p>
+      <div class="hero-meta">
+        <span>PHIL 388: Ethics of Artificial Intelligence</span>
+        <span>|</span>
+        <span>Dr. Tom Wilk</span>
+        <span>|</span>
+        <span>Spring 2026</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- About / Framework Overview -->
+  <section class="section section-alt" id="framework">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Framework</h2>
+        <p>Our approach treats AI ethics not as an afterthought, but as lifecycle work &mdash; examining how ethical problems emerge across every stage of an AI system's development and deployment.</p>
+      </div>
+
+      <div class="container-narrow" style="margin: 0 auto;">
+        <p>In PHIL 388, students investigate real-world AI cases through a structured analytical framework. Rather than treating ethics as abstract theory, the course asks a practical question: <strong>Where in the lifecycle of an AI system did the ethical problem emerge, and who has the power to fix it?</strong></p>
+
+        <p>Each student team selects one of ten ethical challenge areas, identifies a concrete case study, and traces the harm through the <strong>AI Ethics Pipeline</strong> &mdash; a nine-stage model that maps how ethical failures arise not just in data or algorithms, but in procurement decisions, policy goals, workflow design, and institutional oversight.</p>
+
+        <p>The result is this collection of <strong>Field Guide Exhibits</strong>: poster-ready analyses that make AI ethics tangible, specific, and actionable. Each exhibit includes a case explanation, a mechanism analysis identifying how and where harm was introduced, and an ethical summary grounded in moral concepts like harm, justice, autonomy, rights, and accountability.</p>
+
+        <div class="callout callout-gold mt-2">
+          <h4>The Core Question</h4>
+          <p>When you read a case, ask: (1) Which stage of the pipeline introduced the ethical problem? (2) Who controls that stage? (3) What recourse exists for those affected?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ethical Vocabulary -->
+  <section class="section" id="vocabulary">
+    <div class="container">
+      <div class="section-header">
+        <h2>Ethical Vocabulary</h2>
+        <p>Five moral dimensions guide the analysis across every project.</p>
+      </div>
+      <div class="vocab-grid">
+        <div class="vocab-card">
+          <div class="vocab-icon">&#9888;&#65039;</div>
+          <h4>Harm</h4>
+          <p>Setbacks, damage, risk, and dignitary injury to individuals and communities.</p>
+        </div>
+        <div class="vocab-card">
+          <div class="vocab-icon">&#9878;&#65039;</div>
+          <h4>Rights</h4>
+          <p>Boundaries, constraints, and procedural protections that limit what can be done to people.</p>
+        </div>
+        <div class="vocab-card">
+          <div class="vocab-icon">&#9878;</div>
+          <h4>Justice</h4>
+          <p>Fair distribution of benefits and burdens, inclusive processes, and equitable treatment.</p>
+        </div>
+        <div class="vocab-card">
+          <div class="vocab-icon">&#128170;</div>
+          <h4>Autonomy</h4>
+          <p>Meaningful agency and self-determination, free from manipulation or coercion.</p>
+        </div>
+        <div class="vocab-card">
+          <div class="vocab-icon">&#128203;</div>
+          <h4>Accountability</h4>
+          <p>Answerability, responsibility assignment, and meaningful recourse when things go wrong.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>Student Projects</h2>
+        <p>Ten teams. Ten critical issues. Real cases that reveal how AI systems create ethical challenges across society.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- 1. Bias & Discrimination -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&h=400&fit=crop" alt="AI hiring and bias" class="card-image">
+          <div class="card-body">
+            <span class="card-tag">Bias &amp; Discrimination</span>
+            <h3><a href="bias-discrimination.html">When Algorithms Screen You Out</a></h3>
+            <p class="card-excerpt">A federal class-action lawsuit against Workday reveals how AI hiring tools can systematically exclude protected groups at massive scale.</p>
+            <div class="card-footer">
+              <span class="card-case">Mobley v. Workday</span>
+              <a href="bias-discrimination.html" class="card-link">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Labor, Automation & Dignity at Work -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&h=400&fit=crop" alt="Hiring and automation" class="card-image">
+          <div class="card-body">
+            <span class="card-tag">Labor &amp; Automation</span>
+            <h3><a href="labor-automation.html">The Great Unbundling of Human Judgment</a></h3>
+            <p class="card-excerpt">Amazon's AI hiring tool learned to penalize women's resumes, exposing how automation can strip contextual judgment from consequential decisions.</p>
+            <div class="card-footer">
+              <span class="card-case">Amazon AI Hiring Tool</span>
+              <a href="labor-automation.html" class="card-link">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Intellectual Property -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=600&h=400&fit=crop" alt="Books and copyright" class="card-image">
+          <div class="card-body">
+            <span class="card-tag">Intellectual Property</span>
+            <h3><a href="intellectual-property.html">Training on Piracy</a></h3>
+            <p class="card-excerpt">Anthropic's $1.5 billion settlement in Bartz v. Anthropic exposes how AI companies obtained copyrighted works from piracy websites to train language models.</p>
+            <div class="card-footer">
+              <span class="card-case">Bartz v. Anthropic</span>
+              <a href="intellectual-property.html" class="card-link">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Human Agency -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop" alt="Social media and phones" class="card-image">
+          <div class="card-body">
+            <span class="card-tag">Human Agency &amp; Manipulation</span>
+            <h3><a href="human-agency.html">Engineered to Scroll</a></h3>
+            <p class="card-excerpt">TikTok's recommendation algorithm exploits psychological vulnerabilities to shape attention and behavior, raising fundamental questions about autonomous choice.</p>
+            <div class="card-footer">
+              <span class="card-case">TikTok Algorithm</span>
+              <a href="human-agency.html" class="card-link">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Misinformation & Deepfakes -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1586920740099-f3ceb65bc51e?w=600&h=400&fit=crop" alt="Misinformation and media" class="card-image">
+          <div class="card-body">
+            <span class="card-tag">Misinformation &amp; Deepfakes</span>
+            <h3><a href="misinformation-deepfakes.html">The Voice That Wasn't Real</a></h3>
+            <p class="card-excerpt">A deepfake robocall impersonating President Biden during the 2024 New Hampshire primary reveals how AI-generated deception threatens democratic participation.</p>
+            <div class="card-footer">
+              <span class="card-case">Biden Deepfake Robocall</span>
+              <a href="misinformation-deepfakes.html" class="card-link">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Ethical Obligations to AI -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop" alt="AI and consciousness" class="card-image">
+          <div class="card-body">
+            <span class="card-tag">Moral Status of AI</span>
+            <h3><a href="ethical-obligations-ai.html">When the Machine Says &ldquo;I Feel&rdquo;</a></h3>
+            <p class="card-excerpt">Google engineer Blake Lemoine's claim that LaMDA was sentient forces us to confront what moral obligations we might owe to AI systems that appear self-aware.</p>
+            <div class="card-footer">
+              <span class="card-case">Google LaMDA Incident</span>
+              <a href="ethical-obligations-ai.html" class="card-link">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Power & Monopoly -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=400&fit=crop" alt="Corporate power and technology" class="card-image">
+          <div class="card-body">
+            <span class="card-tag">Power &amp; Political Economy</span>
+            <h3><a href="power-monopoly.html">Who Controls the AI?</a></h3>
+            <p class="card-excerpt">The Microsoft-OpenAI partnership and the FTC's inquiry reveal how AI development concentrates power in ways that may undermine democracy and public oversight.</p>
+            <div class="card-footer">
+              <span class="card-case">Microsoft-OpenAI / FTC</span>
+              <a href="power-monopoly.html" class="card-link">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Safety & Security -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&h=400&fit=crop" alt="Autonomous vehicle" class="card-image">
+          <div class="card-body">
+            <span class="card-tag">Safety &amp; Dual Use</span>
+            <h3><a href="safety-security.html">A Fatal Misclassification</a></h3>
+            <p class="card-excerpt">The 2018 Uber autonomous vehicle fatality in Tempe, Arizona exposes what happens when AI safety systems fail and responsibility is distributed into invisibility.</p>
+            <div class="card-footer">
+              <span class="card-case">Uber AV Fatality (2018)</span>
+              <a href="safety-security.html" class="card-link">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Environmental Impact -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop" alt="Data center" class="card-image">
+          <div class="card-body">
+            <span class="card-tag">Environmental Impact</span>
+            <h3><a href="environmental-impact.html">The Hidden Cost of a Query</a></h3>
+            <p class="card-excerpt">AI data centers in the Philadelphia-Delaware region consume staggering amounts of energy and water, raising urgent questions about who bears the environmental burden.</p>
+            <div class="card-footer">
+              <span class="card-case">PA/DE Data Centers</span>
+              <a href="environmental-impact.html" class="card-link">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Privacy & Surveillance -->
+        <div class="project-card">
+          <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&h=400&fit=crop" alt="Privacy and surveillance" class="card-image">
+          <div class="card-body">
+            <span class="card-tag">Privacy &amp; Consent</span>
+            <h3><a href="privacy-surveillance.html">Manufactured Trust</a></h3>
+            <p class="card-excerpt">The FTC's crackdown on Rytr AI for facilitating thousands of fake reviews reveals how AI tools can weaponize deception at scale, eroding consumer consent.</p>
+            <div class="card-footer">
+              <span class="card-case">FTC v. Rytr</span>
+              <a href="privacy-surveillance.html" class="card-link">Explore</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Ethics Pipeline -->
+  <section class="section" id="pipeline">
+    <div class="container">
+      <div class="section-header">
+        <h2>The AI Ethics Pipeline</h2>
+        <p>A nine-stage lifecycle model showing where ethical problems emerge &mdash; and where they can be caught.</p>
+      </div>
+
+      <div class="pipeline-grid">
+        <div class="pipeline-step">
+          <div class="step-num">1</div>
+          <h4>Procurement &amp; Vendor Selection</h4>
+          <p>Where transparency and accountability are built in &mdash; or lost through contract terms, audit rights, and vendor claims.</p>
+        </div>
+        <div class="pipeline-step">
+          <div class="step-num">2</div>
+          <h4>Policy Goals &amp; Success Metrics</h4>
+          <p>Goals translated into metrics create ethical trouble when objectives are unjust or when what gets optimized ignores who gets harmed.</p>
+        </div>
+        <div class="pipeline-step">
+          <div class="step-num">3</div>
+          <h4>Data Practices</h4>
+          <p>Data reflects institutional choices about what to measure. Consent, proxy variables, labeling, and representation all shape outcomes.</p>
+        </div>
+        <div class="pipeline-step">
+          <div class="step-num">4</div>
+          <h4>Model / System</h4>
+          <p>Design choices determine error distribution, interpretability, confidence calibration, and which groups face the worst failure modes.</p>
+        </div>
+        <div class="pipeline-step">
+          <div class="step-num">5</div>
+          <h4>Workflow Use</h4>
+          <p>Where humans and AI meet under real pressure. Advisory tools become mandatory in practice through design, incentives, and time constraints.</p>
+        </div>
+        <div class="pipeline-step">
+          <div class="step-num">6</div>
+          <h4>Outcomes</h4>
+          <p>Ethics cashes out in real effects: who benefits, who is burdened, and whether harms concentrate on vulnerable populations.</p>
+        </div>
+        <div class="pipeline-step">
+          <div class="step-num">7</div>
+          <h4>Appeals &amp; Recourse</h4>
+          <p>Fair treatment requires reasons, evidence, opportunity to respond, and remedy. Many AI systems provide none of these.</p>
+        </div>
+        <div class="pipeline-step">
+          <div class="step-num">8</div>
+          <h4>Monitoring &amp; Audit</h4>
+          <p>Systems change as contexts change. Continuous monitoring detects emerging harms, data drift, and subgroup disparities over time.</p>
+        </div>
+        <div class="pipeline-step">
+          <div class="step-num">9</div>
+          <h4>Oversight &amp; Governance</h4>
+          <p>Operationalizes responsibility through policies, review boards, defined stop-rules, and the institutional authority to pause or end deployments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logos">
+          <img src="images/ethiscope-logo.png" alt="Ethiscope Logo">
+          <img src="images/ai-week-logo.png" alt="AI Week 2026">
+        </div>
+        <p>A PHIL 388 project exploring the ethical dimensions of artificial intelligence through real-world case studies.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="bias-discrimination.html">Bias &amp; Discrimination</a></li>
+          <li><a href="labor-automation.html">Labor &amp; Automation</a></li>
+          <li><a href="intellectual-property.html">Intellectual Property</a></li>
+          <li><a href="human-agency.html">Human Agency</a></li>
+          <li><a href="misinformation-deepfakes.html">Misinformation &amp; Deepfakes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More Projects</h4>
+        <ul>
+          <li><a href="ethical-obligations-ai.html">Moral Status of AI</a></li>
+          <li><a href="power-monopoly.html">Power &amp; Monopoly</a></li>
+          <li><a href="safety-security.html">Safety &amp; Security</a></li>
+          <li><a href="environmental-impact.html">Environmental Impact</a></li>
+          <li><a href="privacy-surveillance.html">Privacy &amp; Consent</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Widener University &middot; PHIL 388: Ethics of Artificial Intelligence &middot; Dr. Tom Wilk &middot; Spring 2026</p>
+    </div>
+  </footer>
+
+  <script src="easter-egg.js"></script>
+</body>
+</html>

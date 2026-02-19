@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bias &amp; Discrimination | AI Under the Ethiscope</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="images/ethiscope-logo.png" alt="AI Under the Ethiscope">
+        <span>AI Under the Ethiscope</span>
+      </a>
+      <button class="nav-hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#framework">Framework</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#pipeline">Ethics Pipeline</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="project-hero">
+    <div class="project-hero-content">
+      <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; <a href="index.html#projects">Projects</a> &rsaquo; Bias &amp; Discrimination</div>
+      <div class="tag-line">Bias &amp; Discrimination</div>
+      <h1>When Algorithms Screen You Out</h1>
+      <p class="case-label">Case Study: Mobley v. Workday</p>
+    </div>
+  </header>
+
+  <section class="project-content">
+    <div class="container">
+      <div class="project-layout">
+        <div class="project-main">
+
+          <div class="source-docs">
+            <h3>Source Documents</h3>
+            <ul>
+              <li><a href="documents/bias-discrimination/Case-and-Mechanism-Explanation.docx"><span class="doc-icon">&#128196;</span> Case &amp; Mechanism Explanation</a></li>
+              <li><a href="documents/bias-discrimination/Field-Guide-Summary.pdf"><span class="doc-icon">&#128196;</span> Field Guide Summary</a></li>
+            </ul>
+          </div>
+
+          <h2>The Case</h2>
+          <p>Derek Mobley, a Black man over 40 years old who lives with anxiety and depression, applied to over 100 jobs at companies using Workday's automated hiring system. He was rejected from every single one before another person ever saw his application. A federal judge allowed a nationwide class action to proceed, ruling that Workday's AI-powered tools may have had a discriminatory impact on applicants over the age of 40.</p>
+
+          <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=900&h=450&fit=crop" alt="AI-driven hiring screening" class="feature-image">
+
+          <p>The case is significant because Workday's system is used by thousands of employers, meaning the potential bias is replicated across millions of applicants. What might appear as individual bad luck is actually a structural problem embedded in automated decision-making.</p>
+
+          <h2>The Mechanism</h2>
+          <p>The ethical problem lies primarily within the model, but procurement plays a critical enabling role. The Workday algorithm produces biased outputs due to faulty training data, creating an unintentional mechanism of harm through a chain of automated decision-making processes.</p>
+
+          <div class="callout">
+            <h4>How the Pipeline Fails</h4>
+            <p><strong>Model:</strong> The algorithm analyzes data patterns that reflect real-world hiring biases, learning that older applicants are historically less likely to be hired &mdash; and then systematically encoding that bias into its recommendations.</p>
+            <p><strong>Procurement:</strong> Employers rely heavily on automated recommendations without auditing for disparate impact. No auditing system is in place for Workday's results, allowing the system to operate bias at scale.</p>
+          </div>
+
+          <p>The system is not explicitly designed to exclude certain applicants. However, because it learns from historical patterns, it reproduces and amplifies existing biases. The algorithm cannot distinguish between correlation and causation, treating age-correlated signals as legitimate screening criteria.</p>
+
+          <h2>Transparency and Oversight Failures</h2>
+          <p>The lack of human oversight and transparency compounds the problem. Applicants cannot see why they were rejected. There is no process to appeal the decision by speaking to a representative &mdash; because the representatives themselves cannot see the reasons either. Mobley's applications were never double-checked by a human until the issue was brought to attention through legal action.</p>
+
+          <h2>Who Is Affected?</h2>
+          <ul>
+            <li><strong>Applicants:</strong> Bear direct harm through automated rejection and potential systemic exclusion from the labor market</li>
+            <li><strong>Workday:</strong> Designed and deployed the tool, arguably functioning as an employment decision-making entity while seeking to avoid legal liability</li>
+            <li><strong>Employers using Workday:</strong> Face potential liability under employment discrimination law for relying on AI screening</li>
+            <li><strong>Investors:</strong> Face reputational and financial risk as the legal landscape evolves</li>
+          </ul>
+
+          <h2>The Ethical Stakes</h2>
+          <p>The case raises multiple moral concerns involving discrimination, personal rights, and justice. AI systems reduce transparency in employment decisions, as applications are screened and denied without human review. This highlights a fundamental issue of accountability: when no person makes the decision, who is responsible for the outcome?</p>
+
+          <div class="callout callout-gold">
+            <h4>Key Ethical Question</h4>
+            <p>When an AI system systematically excludes protected groups but no individual person made the discriminatory decision, how should we assign moral and legal responsibility?</p>
+          </div>
+
+        </div>
+
+        <aside class="project-sidebar">
+          <div class="sidebar-card">
+            <h4>Quick Facts</h4>
+            <ul>
+              <li><strong>Case:</strong> Mobley v. Workday</li>
+              <li><strong>Type:</strong> Federal Class Action</li>
+              <li><strong>Issue:</strong> AI hiring discrimination</li>
+              <li><strong>Scale:</strong> Thousands of employers, millions of applicants</li>
+              <li><strong>Status:</strong> Class action allowed to proceed</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>Pipeline Stages</h4>
+            <ul>
+              <li><strong>Primary:</strong> Model / System</li>
+              <li><strong>Secondary:</strong> Procurement</li>
+              <li><strong>Missing:</strong> Appeals &amp; Recourse</li>
+              <li><strong>Missing:</strong> Monitoring &amp; Audit</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>Ethical Dimensions</h4>
+            <ul>
+              <li>Justice &mdash; disparate impact</li>
+              <li>Rights &mdash; due process denied</li>
+              <li>Accountability &mdash; diffused responsibility</li>
+              <li>Autonomy &mdash; no meaningful choice</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>All Projects</h4>
+            <div class="sidebar-nav">
+              <a href="labor-automation.html">Labor &amp; Automation</a>
+              <a href="intellectual-property.html">Intellectual Property</a>
+              <a href="human-agency.html">Human Agency</a>
+              <a href="misinformation-deepfakes.html">Misinformation &amp; Deepfakes</a>
+              <a href="ethical-obligations-ai.html">Moral Status of AI</a>
+              <a href="power-monopoly.html">Power &amp; Monopoly</a>
+              <a href="safety-security.html">Safety &amp; Security</a>
+              <a href="environmental-impact.html">Environmental Impact</a>
+              <a href="privacy-surveillance.html">Privacy &amp; Consent</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logos">
+          <img src="images/ethiscope-logo.png" alt="Ethiscope Logo">
+          <img src="images/ai-week-logo.png" alt="AI Week 2026">
+        </div>
+        <p>A PHIL 388 project exploring the ethical dimensions of artificial intelligence.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="bias-discrimination.html">Bias &amp; Discrimination</a></li>
+          <li><a href="labor-automation.html">Labor &amp; Automation</a></li>
+          <li><a href="intellectual-property.html">Intellectual Property</a></li>
+          <li><a href="human-agency.html">Human Agency</a></li>
+          <li><a href="misinformation-deepfakes.html">Misinformation &amp; Deepfakes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More Projects</h4>
+        <ul>
+          <li><a href="ethical-obligations-ai.html">Moral Status of AI</a></li>
+          <li><a href="power-monopoly.html">Power &amp; Monopoly</a></li>
+          <li><a href="safety-security.html">Safety &amp; Security</a></li>
+          <li><a href="environmental-impact.html">Environmental Impact</a></li>
+          <li><a href="privacy-surveillance.html">Privacy &amp; Consent</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Widener University &middot; PHIL 388: Ethics of Artificial Intelligence &middot; Dr. Tom Wilk &middot; Spring 2026</p>
+    </div>
+  </footer>
+
+  <script src="easter-egg.js"></script>
+</body>
+</html>

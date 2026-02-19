@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labor, Automation &amp; Dignity at Work | AI Under the Ethiscope</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="images/ethiscope-logo.png" alt="AI Under the Ethiscope">
+        <span>AI Under the Ethiscope</span>
+      </a>
+      <button class="nav-hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#framework">Framework</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#pipeline">Ethics Pipeline</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="project-hero">
+    <div class="project-hero-content">
+      <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; <a href="index.html#projects">Projects</a> &rsaquo; Labor &amp; Automation</div>
+      <div class="tag-line">Labor, Automation &amp; Dignity at Work</div>
+      <h1>The Great Unbundling of Human Judgment</h1>
+      <p class="case-label">Case Study: Amazon's AI Hiring Tool (2014&ndash;2017)</p>
+    </div>
+  </header>
+
+  <section class="project-content">
+    <div class="container">
+      <div class="project-layout">
+        <div class="project-main">
+
+          <div class="source-docs">
+            <h3>Source Documents</h3>
+            <ul>
+              <li><a href="documents/labor-automation/Case-and-Mechanism-Explanation.pdf"><span class="doc-icon">&#128196;</span> Case &amp; Mechanism Explanation</a></li>
+              <li><a href="documents/labor-automation/Field-Guide-Summary.pdf"><span class="doc-icon">&#128196;</span> Field Guide Summary</a></li>
+            </ul>
+          </div>
+
+          <h2>The Case</h2>
+          <p>From 2014 to early 2017, Amazon developed a machine-learning tool designed to rate job applicants on a one-to-five star scale, modeled after its product review system. The goal was to rapidly surface top technical talent by training the system on roughly a decade of historical resumes and hiring outcomes.</p>
+
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=900&h=450&fit=crop" alt="Job hiring process" class="feature-image">
+
+          <p>The system learned patterns that reflected the tech industry's male-dominated history. Without any explicit gender field, the model inferred gender through proxy signals and systematically penalized indicators associated with women.</p>
+
+          <h2>How the Bias Manifested</h2>
+          <p>The algorithm penalized the word "women's" (as in "women's chess club") and reportedly penalized graduates of certain all-women's colleges. These behaviors demonstrate how biased training distributions and proxy variables can produce disparate treatment even when protected attributes are formally excluded from the model.</p>
+
+          <div class="callout">
+            <h4>The Great Unbundling</h4>
+            <p>This case illustrates a powerful concept: AI scales pattern-matching while stripping away the contextual human judgment that recognizes resume gaps from caregiving, values nontraditional career pathways, or accounts for structural barriers. The system optimized efficiently &mdash; for the wrong target.</p>
+          </div>
+
+          <h2>Why Fixing It Failed</h2>
+          <p>Attempts to "scrub" sensitive tokens proved brittle. In high-dimensional models, removing obvious markers rarely eliminates bias because the system discovers new correlates that serve as substitutes. Without strong interpretability and fairness constraints, the optimization objective &mdash; predicting who looked like past "successful" hires &mdash; naturally rewarded reproducing historical inequities.</p>
+          <p>Confronted with persistent proxy discrimination and no reliable guarantee against re-emergent bias, Amazon disbanded the project by early 2017.</p>
+
+          <h2>Levels of Harm</h2>
+          <ul>
+            <li><strong>Individual:</strong> Qualified candidates, especially women, may have been downgraded, losing opportunities and income</li>
+            <li><strong>Organizational:</strong> Biased filters threaten diversity, innovation, legal compliance, and public trust</li>
+            <li><strong>Societal:</strong> Such systems entrench inequities by codifying them into hiring pipelines that operate at massive scale</li>
+          </ul>
+
+          <h2>Mitigation Strategies</h2>
+          <p>The analysis proposes "re-bundling" human oversight with technical safeguards:</p>
+          <ul>
+            <li>Human-in-the-loop designs that preserve contextual judgment</li>
+            <li>Representative data curation with reweighting or augmentation to counter skews</li>
+            <li>Fairness-aware objectives such as equal opportunity constraints</li>
+            <li>Routine disparate impact testing across protected groups</li>
+            <li>Transparent documentation through model cards and dataset datasheets</li>
+            <li>Deployment that presents scores as decision aids, exposes uncertainty, and establishes rollback triggers</li>
+          </ul>
+
+          <div class="callout callout-gold">
+            <h4>The Moral Tension</h4>
+            <p>From a deontological perspective, organizations have a duty to treat persons as ends in themselves, not merely as data points optimized for efficiency. The diffusion of responsibility across data scientists, HR, and leadership creates moral buck-passing that obscures who is accountable for discriminatory outcomes.</p>
+          </div>
+
+        </div>
+
+        <aside class="project-sidebar">
+          <div class="sidebar-card">
+            <h4>Quick Facts</h4>
+            <ul>
+              <li><strong>Company:</strong> Amazon</li>
+              <li><strong>Period:</strong> 2014&ndash;2017</li>
+              <li><strong>Technology:</strong> ML resume screening</li>
+              <li><strong>Outcome:</strong> Project disbanded</li>
+              <li><strong>Bias type:</strong> Gender (proxy)</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>Pipeline Stages</h4>
+            <ul>
+              <li><strong>Primary:</strong> Data Practices</li>
+              <li><strong>Secondary:</strong> Model / System</li>
+              <li><strong>Tertiary:</strong> Workflow Use</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>Ethical Dimensions</h4>
+            <ul>
+              <li>Justice &mdash; distributive fairness</li>
+              <li>Harm &mdash; opportunity denial</li>
+              <li>Rights &mdash; respect for persons</li>
+              <li>Accountability &mdash; moral buck-passing</li>
+            </ul>
+          </div>
+          <div class="sidebar-card">
+            <h4>All Projects</h4>
+            <div class="sidebar-nav">
+              <a href="bias-discrimination.html">Bias &amp; Discrimination</a>
+              <a href="intellectual-property.html">Intellectual Property</a>
+              <a href="human-agency.html">Human Agency</a>
+              <a href="misinformation-deepfakes.html">Misinformation &amp; Deepfakes</a>
+              <a href="ethical-obligations-ai.html">Moral Status of AI</a>
+              <a href="power-monopoly.html">Power &amp; Monopoly</a>
+              <a href="safety-security.html">Safety &amp; Security</a>
+              <a href="environmental-impact.html">Environmental Impact</a>
+              <a href="privacy-surveillance.html">Privacy &amp; Consent</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-logos">
+          <img src="images/ethiscope-logo.png" alt="Ethiscope Logo">
+          <img src="images/ai-week-logo.png" alt="AI Week 2026">
+        </div>
+        <p>A PHIL 388 project exploring the ethical dimensions of artificial intelligence.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="bias-discrimination.html">Bias &amp; Discrimination</a></li>
+          <li><a href="labor-automation.html">Labor &amp; Automation</a></li>
+          <li><a href="intellectual-property.html">Intellectual Property</a></li>
+          <li><a href="human-agency.html">Human Agency</a></li>
+          <li><a href="misinformation-deepfakes.html">Misinformation &amp; Deepfakes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More Projects</h4>
+        <ul>
+          <li><a href="ethical-obligations-ai.html">Moral Status of AI</a></li>
+          <li><a href="power-monopoly.html">Power &amp; Monopoly</a></li>
+          <li><a href="safety-security.html">Safety &amp; Security</a></li>
+          <li><a href="environmental-impact.html">Environmental Impact</a></li>
+          <li><a href="privacy-surveillance.html">Privacy &amp; Consent</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Widener University &middot; PHIL 388: Ethics of Artificial Intelligence &middot; Dr. Tom Wilk &middot; Spring 2026</p>
+    </div>
+  </footer>
+
+  <script src="easter-egg.js"></script>
+</body>
+</html>
