@@ -838,6 +838,63 @@ blockquote {
   font-size: 1.1rem;
 }
 
+/* ---------- Student Byline ---------- */
+
+.student-byline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.75rem;
+  padding: 1rem 1.25rem;
+  background: var(--off-white);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--gold);
+}
+
+.student-byline .byline-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--navy);
+  margin-right: 0.25rem;
+}
+
+.student-byline .student-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.88rem;
+  color: var(--text);
+  font-weight: 500;
+  transition: all var(--transition);
+}
+
+.student-byline .student-chip .student-school {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-weight: 400;
+}
+
+.student-byline a.student-chip {
+  cursor: pointer;
+}
+
+.student-byline a.student-chip:hover {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
+}
+
+.student-byline a.student-chip:hover .student-school {
+  color: rgba(255,255,255,0.7);
+}
+
 /* ---------- Utility ---------- */
 
 .text-center { text-align: center; }
